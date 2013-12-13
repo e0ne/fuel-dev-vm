@@ -1,0 +1,12 @@
+build/*
+.coverage
+*.DS_Store
+*.pyc
+*.egg/
+.tox/
+.venv/
+.idea/
+.vagrant
+*.sublime-project
+*.sublime-workspace
+src/*

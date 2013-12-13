@@ -1,0 +1,28 @@
+[user]
+    name = Ivan Kolodyazhny
+    email = e0ne@e0ne.info
+
+[alias]
+    ci = commit -a
+    co = checkout
+    st = status
+    praise = blame
+    br = branch
+    diffstat = diff --stat
+    cat = !cat @
+    ds = diff --stat
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[apply]
+    whitespace = warn
+
+
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+
+[push]
+    default = upstream

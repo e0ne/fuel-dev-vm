@@ -16,6 +16,7 @@ gem install bundler -v 1.2.1
 gem install builder
 pip install xmlbuilder jinja2
 npm install -g grunt-cli
+npm install -g requirejs
 
 
 apt-get install -y postgresql postgresql-server-dev-9.1

@@ -9,13 +9,14 @@ This script does:
 - clones all necessary repositories (https://github.com/stackforge/fuel-main, https://github.com/stackforge/fuel-web, https://github.com/stackforge/fuel-library, https://github.com/stackforge/fuel-astute, https://github.com/stackforge/fuel-docs),
 - bootstraps new VM using vagrant
 - installs all necessary dependencies
-- build docs
+- build docs (developer and user guides)
 - and runs Fuel UI in fake mode
 
 
 After bootstrapping, Fake UI will be available at: `http://localhost:8100/`
 
 Nailgun docs will be at: `http://localhost:8180/fuel-dev/`
+User & adminitrator guide will be at: `http://localhost:8180/fuel/`
 
 Useful links
 ------------

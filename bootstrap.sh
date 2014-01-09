@@ -11,6 +11,8 @@ apt-get install -y yum yum-utils libmysqlclient-dev isomd5sum
 apt-get install -y python-nose libvirt-bin python-ipaddr python-paramiko python-yaml
 apt-get install -y python-dev python-pip kpartx extlinux unzip genisoimage nodejs
 apt-get install -y nginx
+apt-get install -y imagemagick
+
 service nginx start
 gem install bundler -v 1.2.1
 gem install builder
@@ -24,4 +26,4 @@ sudo -u root sudo -u postgres -i psql -c "CREATE ROLE nailgun WITH SUPERUSER LOG
 sudo -u postgres createdb nailgun
 
 cd /vagrant
-sudo pip install -r src/fuel-main/requirements-eggs.txt
+sudo pip install -r src/fuel-web/neilgun/test-requirements.txt

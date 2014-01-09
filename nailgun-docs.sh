@@ -1,6 +1,5 @@
 #!/bin/bash
 
-pip install sphinx rst2pdf sphinxcontrib-plantuml mock sphinxcontrib-blockdiag sphinxcontrib-actdiag sphinxcontrib-seqdiag sphinxcontrib-nwdiag
 cd /vagrant/src/fuel-web/docs
 make clean html
 

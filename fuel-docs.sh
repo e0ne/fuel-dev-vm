@@ -1,13 +1,8 @@
 #!/bin/bash
 
-easy_install -U Sphinx
-easy_install -U cloud_sptheme
-easy_install -U sphinxcontrib-fancybox
-easy_install -U rst2pdf
-easy_install -U sphinxcontrib-blockdiag
-easy_install -U sphinxcontrib-actdiag
-easy_install -U sphinxcontrib-seqdiag
-easy_install -U sphinxcontrib-nwdiag
-easy_install -U sphinxcontrib-plantuml
+cd /vagrant/src/fuel-docs
+make clean html pdf
 
-apt-get install imagemagick
+mkdir -p /usr/share/nginx/html/fuel
+cp -r _build/html/* /usr/share/nginx/html/fuel
+cp -r _build/pdf /usr/share/nginx/html/fuel

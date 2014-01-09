@@ -1,5 +1,5 @@
-Fuel Development VM 0.1
-=======================
+Fuel Development VM v.0.1.1
+===========================
 
 Official guide to start Fuel development: http://docs.mirantis.com/fuel-dev/develop/env.html
 
@@ -13,10 +13,26 @@ This script does:
 - and runs Fuel UI in fake mode
 
 
+To add your fork repo to your working copy, just set FUEL_$REPO_FORK environment.
+E.g.:
+
+`$ FUEL_MAIN_FORK=git@github.com:e0ne/fuel-main.git ./launch.sh`
+
+or
+
+`$ export FUEL_MAIN_FORK=git@github.com:e0ne/fuel-main.git` and `$ ./launch.sh`
+
+After it, this script automatically adds and fetches new git remote called '`'fork'
+
 After bootstrapping, Fake UI will be available at: `http://localhost:8100/`
 
 Nailgun docs will be at: `http://localhost:8180/fuel-dev/`
 User & adminitrator guide will be at: `http://localhost:8180/fuel/`
+
+New in v.0.1.1
+--------------
+- User & adminitrator guide build
+- Repositories fork support
 
 Useful links
 ------------

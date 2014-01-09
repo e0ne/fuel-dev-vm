@@ -5,7 +5,7 @@ add-apt-repository -y ppa:chris-lea/node.js
 apt-get update
 apt-get install -y nodejs npm
 apt-get install -y build-essential make git ruby ruby-dev rubygems debootstrap
-apt-get install -y vim-nox curl
+apt-get install -y vim-nox curl screen
 curl https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py | sudo python
 apt-get install -y yum yum-utils libmysqlclient-dev isomd5sum
 apt-get install -y python-nose libvirt-bin python-ipaddr python-paramiko python-yaml

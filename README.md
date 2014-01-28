@@ -29,8 +29,19 @@ After bootstrapping, Fake UI will be available at: `http://localhost:8100/`
 Nailgun docs will be at: `http://localhost:8180/fuel-dev/`
 User & adminitrator guide will be at: `http://localhost:8180/fuel/`
 
-New in v.0.1.1
---------------
+Known issues
+------------
+- Can't install Shotgun Python package
+
+Changelog
+---------
+
+v.0.1.2
+-------
+- Bugfixes
+
+v.0.1.1
+-------
 - User & adminitrator guide build
 - Repositories fork support
 

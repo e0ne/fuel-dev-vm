@@ -25,5 +25,4 @@ apt-get install -y postgresql postgresql-server-dev-9.1
 sudo -u root sudo -u postgres -i psql -c "CREATE ROLE nailgun WITH SUPERUSER LOGIN PASSWORD 'nailgun'"
 sudo -u postgres createdb nailgun
 
-cd /vagrant
-sudo pip install -r src/fuel-web/neilgun/test-requirements.txt
+cd /vagrant && sudo pip install -r src/fuel-web/nailgun/test-requirements.txt

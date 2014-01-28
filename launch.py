@@ -14,7 +14,7 @@ def main():
     os.makedirs(src_dir)
     os.chdir(src_dir)
 
-    projects = ['main', 'web']  # , 'library', 'astute', 'docs']
+    projects = ['main', 'web', 'library', 'astute', 'docs']
     base_url = 'https://github.com/stackforge/fuel-{0}.git'
 
     for project in projects:

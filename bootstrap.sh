@@ -25,4 +25,10 @@ apt-get install -y postgresql postgresql-server-dev-9.1
 sudo -u root sudo -u postgres -i psql -c "CREATE ROLE nailgun WITH SUPERUSER LOGIN PASSWORD 'nailgun'"
 sudo -u postgres createdb nailgun
 
-cd /vagrant && sudo pip install -r src/fuel-web/nailgun/test-requirements.txt
+# temporary workagound for Shotgun package
+cp /vagrant/src/fuel-web/nailgun/requirements.txt /vagrant/src/fuel-web/nailgun/requirements.txt.bak
+sed '$ d' /vagrant/src/fuel-web/nailgun/requirements.txt.bak > /vagrant/src/fuel-web/nailgun/requirements.txt
+
+cd /vagrant/src/fuel-web/nailgun/
+sudo pip install -r test-requirements.txt
+mv /vagrant/src/fuel-web/nailgun/requirements.txt.bak /vagrant/src/fuel-web/nailgun/requirements.txt

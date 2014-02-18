@@ -36,6 +36,10 @@ Known issues
 Changelog
 ---------
 
+v.0.1.3
+-------
+- Bugfixes
+
 v.0.1.2
 -------
 - Bugfixes

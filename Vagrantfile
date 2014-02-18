@@ -5,7 +5,8 @@ $script = <<SCRIPT
 sudo /vagrant/bootstrap.sh
 sudo /vagrant/nailgun-docs.sh
 sudo /vagrant/fuel-docs.sh
-sudo /vagrant/nailgun-ui.sh
+sudo /vagrant/nailgun.sh
+sudo screen /vagrant/fake-ui.sh
 SCRIPT
 
 
@@ -22,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/raring/current/raring-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -59,7 +60,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   vb.gui = true
   #
     # Use VBoxManage to customize the VM. For example to change memory:
-    vb.customize ["modifyvm", :id, "--memory", "1024"]
+    vb.customize ["modifyvm", :id, "--ioapic", "on", "--memory", "1024"]
   end
   #
   # View the documentation for the provider you're using for more
